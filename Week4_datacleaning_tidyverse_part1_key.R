@@ -70,7 +70,7 @@ summary(df)
 # To check for and get rid of NAs (and the row that has that NA) for one column of data:
 (df.noAgeNA <- df[!is.na(df$age),])
 # But this makes us look for NAs only in the age column. And sometimes you might want to do that!
-# Example, you only want to eliminate people missing data ina  certain column, but they can have NAs for other things.
+# Example, you only want to eliminate people missing data in a certain column, but they can have NAs for other things.
 
 # To omit ALL rows that have ANY NAs:
 (df.clean <- na.omit(df))
