@@ -187,6 +187,7 @@ mtcars_analysis <- mtcars_missingData %>%
          transmission = case_when(am == 0 ~ "automatic",
                                   am == 1 ~ "manual")) %>% 
   filter(mpg > 20 & am == 1) %>% 
+  select(name, mpg, cyl, hp, transmission)
   
 
 
