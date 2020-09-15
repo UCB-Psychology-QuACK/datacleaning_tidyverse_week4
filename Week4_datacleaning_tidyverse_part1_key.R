@@ -13,6 +13,29 @@
 # I always do this at the top of all of my scripts.
 options(stringsAsFactors=FALSE)
 
+#### Warm up ####
+
+# subj_ages is a vector of participants' ages for all 100 participants in our study
+# (Don't worry about the rnorm() function for right now, we will get to this in
+# later weeks. For now, what you need to know is that it is randomly drawing
+# numbers from a normal distribution with a mean of 18 and sd of 5. This is a
+# nifty function for creating synthetic data! We will return to this in a couple
+# weeks.)
+
+subj_ages <- rnorm(100, mean = 18, sd = 5)
+
+# 1) Make two new vectors, one with all the participants' ages who are adults (i.e., 18 and older), and one with all the participants' ages who are minors. How many participants are in each group?
+# Hint: Use logical indexing (what we learned last week)
+subj_adults <- subj_ages[subj_ages >= 18]
+length(subj_adults) # 41
+subj_minors <- subj_ages[subj_ages < 18]
+length(subj_minors) # 59
+
+# 2) Make a new vector of all the participants' ages who are between 16 and 20 years old (inclusive of these boundary ages). How many participants are in this group?
+subj_16to20 <- subj_ages[subj_ages >= 16 & subj_ages <= 20]
+length(subj_16to20) # 36
+
+
 #### ...Picking up where we left off last week... ####
 
 # Here is a more practical example.
