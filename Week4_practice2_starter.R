@@ -56,10 +56,13 @@
 #### Problem 3 ####
 # Answer the following questions using the summarise function. You may need to use group_by() as well!
 
-# a) On average, do Adelie or Gentoo penguins have longer bill length?
+# a) On average, do Adelie or Gentoo penguins have longer bill length? (This one is a little tricky! Don't forget you can look at ?mean for some help!)
 
 
-# b) On which island to the penguins weigh the most on average? Which island has the most variation in body mass?
+# b) On which island do the penguins weigh the most on average? Which island has the most variation in body mass?
+
+
+# C) On which island do the Adelie penguins weigh the most on average? Which island has the most variation in body mass?
 
 
 # Challenge: What island has the most Adelie species ####
